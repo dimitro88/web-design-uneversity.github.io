@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    background: url(https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1485379185/rocky-mountaineer-canada-SOLOTRAIN117.jpg?itok=2P_-c1sP);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+}
+
+.navigation-menu a, .navigation-menu a:active, .navigation-menu a:visited, .navigation-menu a:hover {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.timetable-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timetable {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timepicker {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.data-table-container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.data-table-dropdown {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data-table {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+input {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: green;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+    width: 190px;
+}
+
+.submit-button {
+    width: 25%;
+    height: 3.7vh;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #66ff66;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-color: #66ff66;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #66ff66;
+    background-image: none;
+}
+/* Custom Select */
+.select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #66ff66;
+    overflow: hidden;
+    border-radius: .25em;
+}
+select {
+    width: 30%;
+    height: 50%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: black;
+    cursor: pointer;
+}
+select::-ms-expand {
+    display: none;
+}
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #66ff66;
+    pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+    color: #f39c12;
+}
+.select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+td, th, caption {
+    height: 5vh;
+}
+
+.data-table table, th, td {
+    border: 2px solid rgba(0,0,0,.4);
+    border-collapse: collapse;
+}
+
+.data-table table {
+    background-color: beige;
+    width: 80%;
+}

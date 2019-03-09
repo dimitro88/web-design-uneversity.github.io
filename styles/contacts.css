@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+}
+
+#title-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+}
+
+.navigation-menu a, .navigation-menu a:active, .navigation-menu a:visited, .navigation-menu a:hover {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hr {
+    width: 100%;
+    margin-top: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.4);
+}
+
+.github-button {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    right: 5%;
+    justify-content: space-around;
+    width: 6.5%;
+    height: 40%;
+    cursor: pointer;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    height: 10vh;
+    width: 100%;
+}
+
+.github-image {
+    width: 25%;
+    height: 80%;
+}
+
+.github-button:hover {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid cadetblue;
+    box-shadow: 0px 2px 253px 0px lightgray inset;
+}
+
+.footer-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-text-container span {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.email-form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.email-form input {
+    width: 100%;
+}
+
+h3 {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+.field{
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+    width: 25%;
+}
+
+.field__input{ 
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.field__input:focus::-webkit-input-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+}
+
+.field__input:focus::-moz-placeholder{
+  color: var(--uiFieldPlaceholderColor);
+  opacity: 1;
+}
+
+.a-field{
+  display: inline-block;
+}
+
+.a-field__input{ 
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.a-field__input:focus{
+  outline: none;
+}
+
+.a-field{
+  --uiFieldHeight: var(--fieldHeight, 40px);  
+  --uiFieldBorderWidth: var(--fieldBorderWidth, 2px);
+  --uiFieldBorderColor: var(--fieldBorderColor);
+
+  --uiFieldFontSize: var(--fieldFontSize, 1em);
+  --uiFieldHintFontSize: var(--fieldHintFontSize, 1em);
+
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+  --uiFieldPaddingBottom: var(--fieldPaddingBottom, 15px);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);   
+
+  position: relative;
+  box-sizing: border-box;
+  font-size: var(--uiFieldFontSize);
+  padding-top: 1em;  
+}
+
+.a-field .a-field__input{
+  height: var(--uiFieldHeight);
+  padding: 0 var(--uiFieldPaddingRight) 0 var(--uiFieldPaddingLeft);
+  border-bottom: var(--uiFieldBorderWidth) solid var(--uiFieldBorderColor);  
+}
+
+.a-field .a-field__input::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input::-moz-placeholder{
+  opacity: 0;
+  transition: opacity .2s ease-out;
+}
+
+.a-field .a-field__input:not(:placeholder-shown) ~ .a-field__label-wrap .a-field__label{
+  opacity: 0;
+  bottom: var(--uiFieldPaddingBottom);
+}
+
+.a-field .a-field__input:focus::-webkit-input-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__input:focus::-moz-placeholder{
+  opacity: 1;
+  transition-delay: .2s;
+}
+
+.a-field .a-field__label-wrap{
+  box-sizing: border-box;
+  width: 100%;
+  height: var(--uiFieldHeight);	
+
+  pointer-events: none;
+  cursor: text;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.a-field .a-field__label{
+  position: absolute;
+  left: var(--uiFieldPaddingLeft);
+  bottom: calc(50% - .5em);
+
+  line-height: 1;
+  font-size: var(--uiFieldHintFontSize);
+
+  pointer-events: none;
+  transition: bottom .2s cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity .2s ease-out;
+  will-change: bottom, opacity;
+}
+
+.a-field .a-field__input:focus ~ .a-field__label-wrap .a-field__label{
+  opacity: 1;
+  bottom: var(--uiFieldHeight);
+}
+
+/* a-field_a1 */
+
+.a-field_a1 .a-field__input{
+  transition: border-color .2s ease-out;
+  will-change: border-color;
+}
+
+.a-field_a1 .a-field__input:focus{
+  border-color: var(--fieldBorderColorActive);
+}
+
+.a-field_a1 .a-field__input:invalid:focus{
+    border-color: red;
+}
+
+.field{
+  --fieldBorderColor: #D1C4E9;
+  --fieldBorderColorActive: #673AB7;
+}
+
+.submit-button {
+    width: 10%;
+    height: 7vh;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 10px;
+    border-color: green;
+}
+
+a, a:active, a:visited, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#gender-radio, #checkbox-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#gender-radio div, #checkbox-container div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#gender-radio input, #checkbox-container input {
+    width: 10%;
+}
+
+#birthday-container, #homepage-container {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#birthday-container input, #homepage-container input {
+    width: 57%;
+}

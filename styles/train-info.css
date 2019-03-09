@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+}
+
+#title-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 60%;
+}
+
+.navigation-menu a, .navigation-menu a:active, .navigation-menu a:visited, .navigation-menu a:hover {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hr {
+    width: 100%;
+    margin-top: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.4);
+}
+
+.github-button {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    right: 5%;
+    justify-content: space-around;
+    width: 6.5%;
+    height: 40%;
+    cursor: pointer;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    right: 0; 
+    height: 10vh;
+    width: 100%;
+}
+
+.github-image {
+    width: 25%;
+    height: 80%;
+}
+
+.github-button:hover {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid cadetblue;
+    box-shadow: 0px 2px 253px 0px lightgray inset;
+}
+
+.footer-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-text-container span {
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.tables-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.depo-table {
+    width: 60%;
+    background-color: white;
+}
+
+td, th, caption {
+    height: 5vh;
+}
+
+.depo-table, th, td {
+    border: 2px solid rgba(0,0,0,.4);
+    border-collapse: collapse;
+}
+
+.video-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ukrzal-video {
+    margin: 20px;
+    height: 100%;
+    width: 45%;
+}
+
+.audio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a, a:active, a:visited, a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.lists-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list {
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+    height: 5%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

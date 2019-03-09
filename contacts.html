@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Railway info</title>
+        <meta name="description" content="Інформація про залізниці України. Розклад поїздів." />
+        <link rel="stylesheet" href="styles/contacts.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="navigation-menu" id="menu">
+                <a href="index.html"><span>Головна</span></a>
+                <a href="rozklad.html"><span>Розклад потягів</span></a>
+                <a href="train-info.html"><span>Інформація про потяги</span></a>
+                <a href="contacts.html"><span>Контакти</span></a>
+            </div>
+        </header>
+        <div id="title-img">
+            <img src="https://phc.org.ua/uploads/images/shutterstock_79699552%281%29.jpg" style="height: 75vh; width: 100%">
+        </div>
+        <hr class="hr">
+        <div class="main-content-container">
+            <form class="email-form" onsubmit="sendForm(event)" id="send-form">
+                <h3>Заповніть форму і ми відправимо вам імейл</h3>
+                <div>
+                    <label class="field a-field a-field_a1 page__field">
+                      <input class="field__input a-field__input" placeholder="Дмитро" required id="name" name="name" autocomplete="off">
+                      <span class="a-field__label-wrap">
+                        <span class="a-field__label">Ім'я</span>
+                      </span>
+                    </label>
+                </div>
+                 <div>
+                    <label class="field a-field a-field_a1 page__field">
+                      <input class="field__input a-field__input" placeholder="Літвінчук" required id="surname" name="surname" autocomplete="off">
+                      <span class="a-field__label-wrap">
+                        <span class="a-field__label">Прізвище</span>
+                      </span>
+                    </label>
+                </div>
+                <div>
+                    <label class="field a-field a-field_a1 page__field">
+                      <input class="field__input a-field__input" placeholder="380501345524" required id="phone" name="phone" autocomplete="off">
+                      <span class="a-field__label-wrap">
+                        <span class="a-field__label">Номер телефону</span>
+                      </span>
+                    </label>
+                </div>
+                <div>
+                    <label class="field a-field a-field_a1 page__field">
+                      <input class="field__input a-field__input" placeholder="dmytrolitvinchuk2108@gmail.com" required id="email" name="email" autocomplete="off">
+                      <span class="a-field__label-wrap">
+                        <span class="a-field__label">Імейл</span>
+                      </span>
+                    </label>
+                </div>
+                <div id="gender-radio">
+                    <div>
+                        <input type="radio" name="gender" value="male" checked> Чоловік
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="female"> Жінка
+                    </div>
+                </div>
+                <div id="checkbox-container">
+                    <div>
+                        <input type="checkbox" name="work" value="work"> Я працюю на "Укрзалізниці"
+                    </div>
+                    <div>
+                        <input type="checkbox" name="country" value="country"> Я іноземець
+                    </div>
+                </div>
+                <div id="birthday-container">
+                    Дата народження : <input type="date" name="bday" required max="2019-03-09" min="1930-01-01">
+                </div>
+                <div id="homepage-container">
+                    Домашня сторінка : <input type="url" name="homepage">
+                </div>
+                <button class="submit-button" type="submit">Надіслати</button>
+            </form>
+        </div>
+        <hr class="hr">
+        <footer class="footer">
+            <div class="footer-text-container">
+                <div class="footer-text">
+                    <span>Powered by Litvinchuk Dmytro @2019</span>
+                </div>
+            </div>
+            <a class="github-button" href="https://github.com/dimitro88" target="_blank">
+                <img alt="github" src="https://image.flaticon.com/icons/png/512/25/25231.png" class="github-image"> 
+                <span>Github</span>
+            </a>
+        </footer>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/menu.js"></script>
+    </body>
+</html>
